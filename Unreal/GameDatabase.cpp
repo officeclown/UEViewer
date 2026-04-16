@@ -789,6 +789,7 @@ void FArchive::DetectGame()
 #endif
 #if BATMAN
 	if (ArVer == 805 && ArLicenseeVer == 101)	SET(GAME_Batman2);
+	if (ArVer == 807 && ArLicenseeVer == 104)	SET(GAME_Batman3);
 	if ( (ArVer == 806 || ArVer == 807) &&
 		 (ArLicenseeVer == 103 || ArLicenseeVer == 137 || ArLicenseeVer == 138) )
 		SET(GAME_Batman3);

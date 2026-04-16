@@ -644,7 +644,7 @@ struct FPropertyTagBat2
 	{
 		Ar << Tag.Type;
 		if (!Tag.Type) return Ar;
-		if (Ar.Game == GAME_Batman3 && Ar.ArLicenseeVer >= 104) goto named_prop; // Batman3 Online has old version of FPropertyTag
+		// if (Ar.Game == GAME_Batman3 && Ar.ArLicenseeVer >= 104) goto named_prop; // Batman3 Online has old version of FPropertyTag
 		Ar << Tag.Offset;
 		if (Tag.Type == NAME_IntProperty || Tag.Type == NAME_FloatProperty || Tag.Type == NAME_NameProperty || Tag.Type == NAME_VectorProperty ||
 			Tag.Type == NAME_RotatorProperty || Tag.Type == NAME_StrProperty || Tag.Type == 16 /*NAME_ObjectNCRProperty*/)
